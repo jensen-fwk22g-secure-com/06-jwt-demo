@@ -1,0 +1,21 @@
+{
+  "name": "06-jwt-demo",
+  "version": "1.0.0",
+  "description": "Express-server som demonstrerar JWT.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jensen-fwk22g-secure-com/06-jwt-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jensen-fwk22g-secure-com/06-jwt-demo/issues"
+  },
+  "homepage": "https://github.com/jensen-fwk22g-secure-com/06-jwt-demo#readme"
+}
