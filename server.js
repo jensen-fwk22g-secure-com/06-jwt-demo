@@ -53,10 +53,13 @@ app.get('/secret', (req, res) => {
 	if( !token ) {
 		let x = req.headers['authorization']
 		if( x === undefined ) {
+			// Vi hittade ingen token, authorization fail
 			res.sendStatus(401)
 			return
 		}
 		token = x.substring(7)
+		// Authorization: Bearer JWT......
+		// substring(7) för att hoppa över "Bearer " och plocka ut JWT-strängen
 	}
 
 	console.log('Token: ', token)
@@ -73,6 +76,7 @@ app.get('/secret', (req, res) => {
 		res.send('You have access to the secret stuff.')
 
 	}else {
+		console.log('Ingen token')
 		res.sendStatus(401)  // Unauthorized
 	}
 })
